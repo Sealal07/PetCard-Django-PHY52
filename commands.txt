@@ -1,0 +1,14 @@
+django-admin startproject PetCard
+cd PetCard
+python manage.py startapp pets
+
+python manage.py makemigrations
+python manage.py migrate
+
+
+git init 
+git add .
+git commit -m "first commit"
+git branch -m main
+git remote add origin https://github.com/Sealal07/PetCard-Django-PHY52.git
+git push -u origin main
