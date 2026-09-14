@@ -13,7 +13,7 @@ class Pet(models.Model):
     breed = models.CharField(max_length=100,
                              verbose_name='Порода')
     slug = models.SlugField(max_length=200, unique=True,
-                            db_index=True, 
+                            db_index=True, null=True, blank=True, 
                             verbose_name='ЧПУ-ссылка')
     bio = models.TextField(verbose_name='Особенности  ухода, рацион, противопоказания')
     is_public = models.BooleanField(default=True,
