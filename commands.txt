@@ -27,3 +27,7 @@ python manage.py createsuperuser
 
 python manage.py makemigrations
 python manage.py migrate
+
+git add .
+git commit -m "14/09/2026-1"
+git push origin main
